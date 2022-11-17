@@ -28,6 +28,16 @@ class ViewController: UIViewController {
         let imageName = "d\(rolledNumber)"
         
         diceImageView.image = UIImage(named: imageName)
+        
+        if (rolledNumber == 1) {
+            criticalLabel.text = "Critical Miss!"
+        }
+        else if (rolledNumber == 20) {
+            criticalLabel.text = "Critical Hit!"
+        }
+        else {
+            criticalLabel.text = "Roll for Charisma"
+        }
     }
 }
 

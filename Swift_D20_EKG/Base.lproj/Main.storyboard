@@ -19,7 +19,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="d1" translatesAutoresizingMaskIntoConstraints="NO" id="AhH-HD-FSS">
                                 <rect key="frame" x="38" y="263" width="316" height="326"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYm-gT-N5A">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Roll for Charisma" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYm-gT-N5A">
                                 <rect key="frame" x="38" y="647" width="316" height="104"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="36"/>
                                 <nil key="textColor"/>
@@ -40,7 +40,7 @@
                             <constraint firstItem="AhH-HD-FSS" firstAttribute="leading" secondItem="vYm-gT-N5A" secondAttribute="leading" id="0yB-Hv-TVz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vYm-gT-N5A" secondAttribute="bottom" constant="67" id="2KD-k8-pmW"/>
                             <constraint firstItem="AhH-HD-FSS" firstAttribute="trailing" secondItem="vYm-gT-N5A" secondAttribute="trailing" id="BYJ-il-fpS"/>
-                            <constraint firstItem="AhH-HD-FSS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="204" id="KOf-kS-Hpr"/>
+                            <constraint firstItem="AhH-HD-FSS" firstAttribute="top" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="204" id="KOf-kS-Hpr"/>
                             <constraint firstItem="gcp-b9-RFB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZNW-HW-9m5"/>
                             <constraint firstItem="AhH-HD-FSS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="dtO-4x-9Ps"/>
                             <constraint firstItem="AhH-HD-FSS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hs9-nE-2qG"/>
@@ -48,7 +48,7 @@
                             <constraint firstItem="gcp-b9-RFB" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ilz-2E-mhw"/>
                             <constraint firstItem="AhH-HD-FSS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="n11-me-r2i"/>
                             <constraint firstItem="gcp-b9-RFB" firstAttribute="centerX" secondItem="vYm-gT-N5A" secondAttribute="centerX" id="wXL-Ow-Doe"/>
-                            <constraint firstItem="vYm-gT-N5A" firstAttribute="top" secondItem="AhH-HD-FSS" secondAttribute="bottom" constant="58" id="zVy-uZ-NVQ"/>
+                            <constraint firstItem="vYm-gT-N5A" firstAttribute="top" relation="lessThanOrEqual" secondItem="AhH-HD-FSS" secondAttribute="bottom" constant="58" id="zVy-uZ-NVQ"/>
                         </constraints>
                     </view>
                     <connections>
