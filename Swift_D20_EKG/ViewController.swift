@@ -40,21 +40,17 @@ class ViewController: UIViewController {
         switch rolledNumber {
             case 1:
                 criticalLabel.text = "Critical Miss!"
-                // play failwah sound
                 pathToSound = Bundle.main.path(forResource: "failwah", ofType: "mp3")!
                 break
             case 7:
-                // play torpedo sound
                 pathToSound = Bundle.main.path(forResource: "torpedo", ofType: "mp3")!
                 break
             case 20:
                 criticalLabel.text = "Critical Hit!"
-                // play zfanfare sound
                 pathToSound = Bundle.main.path(forResource: "zfanfare", ofType: "mp3")!
                 break
             default:
                 criticalLabel.text = "Roll for Charisma"
-                // play rolldice sound
                 pathToSound = Bundle.main.path(forResource: "rolldice", ofType: "mp3")!
                 break
         }
