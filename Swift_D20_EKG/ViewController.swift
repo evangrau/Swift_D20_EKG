@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
     @IBOutlet var diceImageView: UIImageView!
     @IBOutlet var criticalLabel: UILabel!
+    var audioPlayer: AVAudioPlayer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +20,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonGotPressed() {
+        rollDice()
+    }
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         rollDice()
     }
     
@@ -29,14 +35,38 @@ class ViewController: UIViewController {
         
         diceImageView.image = UIImage(named: imageName)
         
-        if (rolledNumber == 1) {
-            criticalLabel.text = "Critical Miss!"
+        var pathToSound: String
+        
+        switch rolledNumber {
+            case 1:
+                criticalLabel.text = "Critical Miss!"
+                // play failwah sound
+                pathToSound = Bundle.main.path(forResource: "failwah", ofType: "mp3")!
+                break
+            case 7:
+                // play torpedo sound
+                pathToSound = Bundle.main.path(forResource: "torpedo", ofType: "mp3")!
+                break
+            case 20:
+                criticalLabel.text = "Critical Hit!"
+                // play zfanfare sound
+                pathToSound = Bundle.main.path(forResource: "zfanfare", ofType: "mp3")!
+                break
+            default:
+                criticalLabel.text = "Roll for Charisma"
+                // play rolldice sound
+                pathToSound = Bundle.main.path(forResource: "rolldice", ofType: "mp3")!
+                break
         }
-        else if (rolledNumber == 20) {
-            criticalLabel.text = "Critical Hit!"
+                                                   
+        let url = URL(fileURLWithPath: pathToSound)
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
         }
-        else {
-            criticalLabel.text = "Roll for Charisma"
+        catch {
+            print("there's an error hun")
         }
     }
 }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F04B252A292686AA00A9A6A1 /* failwah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F04B2529292686AA00A9A6A1 /* failwah.mp3 */; };
+		F04B252C292686BC00A9A6A1 /* rolldice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F04B252B292686BC00A9A6A1 /* rolldice.mp3 */; };
+		F04B252E292686CB00A9A6A1 /* torpedo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F04B252D292686CB00A9A6A1 /* torpedo.mp3 */; };
+		F04B2530292686D700A9A6A1 /* zfanfare.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F04B252F292686D700A9A6A1 /* zfanfare.mp3 */; };
 		F0868F892923D713008025DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0868F882923D713008025DE /* AppDelegate.swift */; };
 		F0868F8B2923D713008025DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0868F8A2923D713008025DE /* SceneDelegate.swift */; };
 		F0868F8D2923D713008025DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0868F8C2923D713008025DE /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F04B2529292686AA00A9A6A1 /* failwah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = failwah.mp3; path = Swift_D20_EKG/Assets.xcassets/failwah.dataset/failwah.mp3; sourceTree = "<group>"; };
+		F04B252B292686BC00A9A6A1 /* rolldice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = rolldice.mp3; path = Swift_D20_EKG/Assets.xcassets/rolldice.dataset/rolldice.mp3; sourceTree = "<group>"; };
+		F04B252D292686CB00A9A6A1 /* torpedo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = torpedo.mp3; path = Swift_D20_EKG/Assets.xcassets/torpedo.dataset/torpedo.mp3; sourceTree = "<group>"; };
+		F04B252F292686D700A9A6A1 /* zfanfare.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = zfanfare.mp3; path = Swift_D20_EKG/Assets.xcassets/zfanfare.dataset/zfanfare.mp3; sourceTree = "<group>"; };
 		F0868F852923D713008025DE /* Swift_D20_EKG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift_D20_EKG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0868F882923D713008025DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0868F8A2923D713008025DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +48,10 @@
 		F0868F7C2923D713008025DE = {
 			isa = PBXGroup;
 			children = (
+				F04B252F292686D700A9A6A1 /* zfanfare.mp3 */,
+				F04B252D292686CB00A9A6A1 /* torpedo.mp3 */,
+				F04B252B292686BC00A9A6A1 /* rolldice.mp3 */,
+				F04B2529292686AA00A9A6A1 /* failwah.mp3 */,
 				F0868F872923D713008025DE /* Swift_D20_EKG */,
 				F0868F862923D713008025DE /* Products */,
 			);
@@ -125,6 +137,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F04B2530292686D700A9A6A1 /* zfanfare.mp3 in Resources */,
+				F04B252E292686CB00A9A6A1 /* torpedo.mp3 in Resources */,
+				F04B252C292686BC00A9A6A1 /* rolldice.mp3 in Resources */,
+				F04B252A292686AA00A9A6A1 /* failwah.mp3 in Resources */,
 				F0868F952923D714008025DE /* LaunchScreen.storyboard in Resources */,
 				F0868F922923D714008025DE /* Assets.xcassets in Resources */,
 				F0868F902923D713008025DE /* Main.storyboard in Resources */,
